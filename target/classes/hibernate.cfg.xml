@@ -14,5 +14,6 @@
   <!-- <property name="hibernate.hbm2ddl.auto">create</property> -->
   <property name="hibernate.hbm2ddl.auto">update</property>
   <mapping class="com.mycompany.rottenpotatoes.model.Movie"/>
+  <mapping class="com.mycompany.rottenpotatoes.model.Show"/>
  </session-factory>
 </hibernate-configuration>

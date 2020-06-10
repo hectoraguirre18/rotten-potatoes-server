@@ -20,4 +20,10 @@ public class MovieService {
         MovieDao dao = MovieDao.getInstance();
         return dao.getAllMovies();
     }
+
+    public Movie saveMovie(Movie movie) throws ConnectException {
+        MovieDao dao = MovieDao.getInstance();
+        dao.insertMovie(movie);
+        return movie;
+    }
 }

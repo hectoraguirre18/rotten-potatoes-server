@@ -4,23 +4,23 @@ import java.net.ConnectException;
 import java.util.*;
 
 import com.mycompany.rottenpotatoes.data.Connection;
-import com.mycompany.rottenpotatoes.model.Movie;
+import com.mycompany.rottenpotatoes.model.Show;
 
 import org.hibernate.query.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-public class MovieDao {
+public class ShowDao {
 
-	private static MovieDao instance = new MovieDao();
+	private static ShowDao instance = new ShowDao();
 
-	public static MovieDao getInstance() {
+	public static ShowDao getInstance() {
 	    return instance;
 	}
 
-    private MovieDao(){}
+    private ShowDao(){}
 
-	public ArrayList<Movie> getAllMovies() throws ConnectException {
+	public ArrayList<Show> getAllShows() throws ConnectException {
         Session session = Connection.getSession();
         Transaction tx;
         try {
@@ -30,15 +30,15 @@ public class MovieDao {
             throw new ConnectException();
         }
 
-        Query<Movie> query = session.createQuery("FROM Movie", Movie.class);
-        ArrayList<Movie> movies = new ArrayList<Movie>(query.list());
+        Query<Show> query = session.createQuery("FROM Show", Show.class);
+        ArrayList<Show> shows = new ArrayList<Show>(query.list());
 
         tx.commit();
         session.close();
-        return movies;
+        return shows;
 	}
 
-    public void insertMovie(Movie movie) throws ConnectException {
+    public void insertShow(Show show) throws ConnectException {
         Session session = Connection.getSession();
         Transaction tx;
         try {
@@ -48,7 +48,7 @@ public class MovieDao {
             throw new ConnectException();
         }
 
-        session.save(movie);
+        session.save(show);
 
         tx.commit();
         session.close();

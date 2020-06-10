@@ -10,19 +10,19 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-import com.mycompany.rottenpotatoes.model.Movie;
-import com.mycompany.rottenpotatoes.service.MovieService;
+import com.mycompany.rottenpotatoes.model.Show;
+import com.mycompany.rottenpotatoes.service.ShowService;
 
-@Path("/movies")
-public class MoviesResource {
+@Path("/shows")
+public class ShowsResource {
 
     @GET
     @Produces("application/json")
-    public Response getAllMovies() {
+    public Response getAllShows() {
         Status status;
         Object entity;
         try {
-            entity = MovieService.getInstance().getAllMovies();
+            entity = ShowService.getInstance().getAllShows();
             status = Status.OK;
         } catch (ConnectException e) {
             entity = "Servers under maintenance. Please try again later.";
@@ -38,16 +38,16 @@ public class MoviesResource {
     @POST
     @Produces("application/json")
     @Consumes("application/json")
-    public Response createMovie(Movie movie) {
+    public Response createShow(Show show) {
         Status status;
         Object entity;
         try {
-            if(movie == null) {
-                System.err.println("Attempting to insert a movie but user didn\'t add movie parameter.");
+            if(show == null) {
+                System.err.println("Attempting to insert a show but user didn\'t add show parameter.");
                 entity = "Missing account parameter.";
                 status = Status.BAD_REQUEST;
             } else {
-                entity = MovieService.getInstance().saveMovie(movie);
+                entity = ShowService.getInstance().saveShow(show);
                 status = Status.CREATED;
             }
         } catch (ConnectException e) {
