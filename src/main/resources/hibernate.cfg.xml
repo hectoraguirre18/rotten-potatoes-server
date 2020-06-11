@@ -17,5 +17,6 @@
   <mapping class="com.mycompany.rottenpotatoes.model.Show"/>
   <mapping class="com.mycompany.rottenpotatoes.model.User"/>
   <mapping class="com.mycompany.rottenpotatoes.model.MovieReview"/>
+  <mapping class="com.mycompany.rottenpotatoes.model.ShowReview"/>
  </session-factory>
 </hibernate-configuration>
