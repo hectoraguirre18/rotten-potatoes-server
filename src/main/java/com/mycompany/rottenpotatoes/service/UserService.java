@@ -1,7 +1,6 @@
 package com.mycompany.rottenpotatoes.service;
 
 import java.net.ConnectException;
-import java.util.ArrayList;
 
 import com.mycompany.rottenpotatoes.dao.UserDao;
 import com.mycompany.rottenpotatoes.model.User;
