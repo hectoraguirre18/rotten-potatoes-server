@@ -1,9 +1,12 @@
 E:\Users\pc\Documents\GitHub\rotten-potatoes-server\src\main\java\com\mycompany\rottenpotatoes\model\Show.java
 E:\Users\pc\Documents\GitHub\rotten-potatoes-server\src\main\java\com\mycompany\rottenpotatoes\resource\MoviesResource.java
+E:\Users\pc\Documents\GitHub\rotten-potatoes-server\src\main\java\com\mycompany\rottenpotatoes\resource\MoviesReviewResource.java
 E:\Users\pc\Documents\GitHub\rotten-potatoes-server\src\main\java\com\mycompany\rottenpotatoes\service\ShowService.java
 E:\Users\pc\Documents\GitHub\rotten-potatoes-server\src\main\java\com\mycompany\rottenpotatoes\service\MovieService.java
 E:\Users\pc\Documents\GitHub\rotten-potatoes-server\src\main\java\com\mycompany\rottenpotatoes\model\User.java
 E:\Users\pc\Documents\GitHub\rotten-potatoes-server\src\main\java\com\mycompany\rottenpotatoes\dao\MovieDao.java
+E:\Users\pc\Documents\GitHub\rotten-potatoes-server\src\main\java\com\mycompany\rottenpotatoes\dao\MovieReviewDao.java
+E:\Users\pc\Documents\GitHub\rotten-potatoes-server\src\main\java\com\mycompany\rottenpotatoes\model\MovieReview.java
 E:\Users\pc\Documents\GitHub\rotten-potatoes-server\src\main\java\com\mycompany\rottenpotatoes\resource\UsersResource.java
 E:\Users\pc\Documents\GitHub\rotten-potatoes-server\src\main\java\com\mycompany\rottenpotatoes\resource\ShowsResource.java
 E:\Users\pc\Documents\GitHub\rotten-potatoes-server\src\main\java\com\mycompany\rottenpotatoes\dao\UserDao.java
@@ -11,3 +14,4 @@ E:\Users\pc\Documents\GitHub\rotten-potatoes-server\src\main\java\com\mycompany\
 E:\Users\pc\Documents\GitHub\rotten-potatoes-server\src\main\java\com\mycompany\rottenpotatoes\model\Movie.java
 E:\Users\pc\Documents\GitHub\rotten-potatoes-server\src\main\java\com\mycompany\rottenpotatoes\service\UserService.java
 E:\Users\pc\Documents\GitHub\rotten-potatoes-server\src\main\java\com\mycompany\rottenpotatoes\dao\ShowDao.java
+E:\Users\pc\Documents\GitHub\rotten-potatoes-server\src\main\java\com\mycompany\rottenpotatoes\service\MovieReviewService.java
